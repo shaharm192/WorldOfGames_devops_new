@@ -6,7 +6,6 @@ pipeline {
             steps {
                 git branch: 'main',
                     url: 'https://github.com/shaharm192/world_of_games_devops.git'
-                    # fasfdsafdsafdsafdsa
             }
         }
 
