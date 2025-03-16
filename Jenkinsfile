@@ -18,10 +18,16 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 sh '''
-                    docker stop rest_app || true
-                    docker rm rest_app || true
-                    docker run -d -p 5001:5001 --name rest_app world-of-games-rest-app
+                docker stop rest_app || true
+                docker rm rest_app || true
+                docker run -d -p 5001:5001 --name rest_app world-of-games-rest-app
                 '''
+            }
+        }
+
+        stage('Run Backend Server') {
+            steps {
+                sh 'nohup python rest_app.py &'
             }
         }
 
