@@ -5,4 +5,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 5001
 ENV FLASK_APP=rest_app.py
 ENV FLASK_RUN_HOST=0.0.0.0
-CMD ["python", "/app/rest_app.py"]
+CMD ["python", "rest_app.py"]
