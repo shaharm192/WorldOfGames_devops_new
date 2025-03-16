@@ -5,7 +5,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/shaharm192/world_of_games_devops.git'
+                    url: 'https://github.com/shaharm192/WorldOfGames_devops_new.git'
             }
         }
 
