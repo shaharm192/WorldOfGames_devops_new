@@ -3,6 +3,6 @@ WORKDIR /app
 COPY docker-flask /app
 RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 5001
-ENV FLASK_APP=docker_backend_testing.py
+ENV FLASK_APP=rest_app.py
 ENV FLASK_RUN_HOST=0.0.0.0
-CMD ["python", "docker_backend_testing.py"]
+CMD ["python", "rest_app.py"]
