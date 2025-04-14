@@ -4,7 +4,7 @@ pipeline {
     environment {
         IMAGE_NAME = 'world-of-games-rest-app'
         CONTAINER_NAME = 'rest_app'
-        DOCKERHUB_USER = 'shaharm192'  // Replace with your Docker Hub username
+        DOCKERHUB_USER = 'shaharm192'
     }
 
     stages {
@@ -34,7 +34,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                sh 'sleep 5' // Give the server time to boot
+                sh 'sleep 5' 
                 sh 'python3 e2e.py || exit 1'
             }
         }
