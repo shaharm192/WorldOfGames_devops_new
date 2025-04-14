@@ -1,7 +1,11 @@
 import live
+from Utils import create_scores_file
 
 print("\n🎮 Welcome to the World of Games! 🎮\n")
 print("Here you can find many cool games to play.")
+
+# Ensure Scores file exists
+create_scores_file()
 
 # Get player's name
 player_name = live.welcome_name()
